@@ -20,6 +20,5 @@ public class DigimonController {
         return DIGIMONS.stream()
                 .filter(digimon -> digimonId.equals(digimon.getDigimonId())).findFirst()
                 .orElseThrow(() -> new IllegalStateException("Digimon with Id: " + digimonId + " doesn't exists"));
-
     }
 }
